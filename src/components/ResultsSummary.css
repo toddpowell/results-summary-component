@@ -1,0 +1,9 @@
+.results-summary-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.result-wrapper, .summary-wrapper {
+    border: 1px solid black;
+    width: 50%;
+}
