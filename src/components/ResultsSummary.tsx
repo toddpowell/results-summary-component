@@ -1,4 +1,5 @@
 import "./ResultsSummary.css";
+import { ResultsData } from "../../ResultsData";
 
 const ResultsSummary = () => {
   return (
@@ -45,6 +46,13 @@ const ResultsSummary = () => {
           </div>
         </div>
       </div>
+      {ResultsData.map((result, i) => (
+        <>
+          <div>{result.category}</div>
+          <div>{result.score}</div>
+          <div>{result.icon}</div>
+        </>
+      ))}
     </>
   );
 };
