@@ -27,7 +27,7 @@ const ResultsSummary = () => {
             <div className="summary-list">
               {ResultsData.map((result, i) => (
                 <>
-                  <p className="summary-item light-red light-red-bg">
+                  <p className={"summary-item color-" + i + " bg-" + i}>
                     <div>
                       <img src={result.icon}></img>
                       <span>{result.category}</span>

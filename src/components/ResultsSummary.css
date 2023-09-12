@@ -20,13 +20,13 @@
     --cobalt-blue-bg: hsl(234, 85%, 45%, .3);
 }
 
-.light-red { color: var(--light-red);}
+.light-red, .color-0 { color: var(--light-red);}
 /* .light-red-bg { background-color: var(--light-red-bg);} */
-.orangey-yellow { color: var(--orangey-yellow);}
+.orangey-yellow, .color-1 { color: var(--orangey-yellow);}
 /* .orangey-yellow-bg { background-color: var(--orangey-yellow-bg); } */
-.green-teal { color: var(--green-teal);}
+.green-teal, .color-2 { color: var(--green-teal);}
 /* .green-teal-bg { background-color: var(--green-teal-bg); } */
-.cobalt-blue { color: var(--cobalt-blue);}
+.cobalt-blue, .color-3 { color: var(--cobalt-blue);}
 /* .cobalt-blue-bg { background-color: var(--cobalt-blue-bg); } */
 
 /* ## Gradients
