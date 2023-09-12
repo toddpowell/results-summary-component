@@ -7,10 +7,13 @@ const ResultsSummary = () => {
         <div className="result-wrapper bg-gradient">
           <p className="result-title">Your Result</p>
           <div className="circle-wrapper">
-            <div className="result-score circle-gradient circle">76 of 100</div>
+            <div className="result-score circle-gradient circle">
+              <div className="result-score-number">76</div>
+              <div className="of-100">of 100</div>
+            </div>
           </div>
           <div className="result-message">
-            <h1>Great</h1>
+            <p>Great</p>
             <p>
               You scored higher than 65% of the people who have taken these
               tests.
@@ -21,16 +24,20 @@ const ResultsSummary = () => {
           <p className="summary-title">Summary</p>
           <div className="summary-list">
             <p className="summary-item light-red light-red-bg">
-              Reaction 80 / 100
+              <span>Reaction</span>
+              <span>80 / 100</span>
             </p>
             <p className="summary-item orangey-yellow orangey-yellow-bg">
-              Memory 92 / 100
+              <span>Memory</span>
+              <span>92 / 100</span>
             </p>
             <p className="summary-item green-teal green-teal-bg">
-              Verbal 61 / 100
+              <span>Verbal</span>
+              <span>61 / 100</span>
             </p>
             <p className="summary-item cobalt-blue cobalt-blue-bg">
-              Visual 72 / 100
+              <span>Visual</span>
+              <span>72 / 100</span>
             </p>
           </div>
           <button className="continue">Continue</button>
