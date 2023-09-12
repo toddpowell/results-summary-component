@@ -20,10 +20,18 @@ const ResultsSummary = () => {
         <div className="summary-wrapper">
           <p className="summary-title">Summary</p>
           <div className="summary-list">
-            <p className="summary-item">Reaction 80 / 100</p>
-            <p className="summary-item">Memory 92 / 100</p>
-            <p className="summary-item">Verbal 61 / 100</p>
-            <p className="summary-item">Visual 72 / 100</p>
+            <p className="summary-item light-red light-red-bg">
+              Reaction 80 / 100
+            </p>
+            <p className="summary-item orangey-yellow orangey-yellow-bg">
+              Memory 92 / 100
+            </p>
+            <p className="summary-item green-teal green-teal-bg">
+              Verbal 61 / 100
+            </p>
+            <p className="summary-item cobalt-blue cobalt-blue-bg">
+              Visual 72 / 100
+            </p>
           </div>
           <button className="continue">Continue</button>
         </div>

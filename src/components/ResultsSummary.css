@@ -5,10 +5,27 @@
 - Orangey yellow: hsl(39, 100%, 56%)
 - Green teal: hsl(166, 100%, 37%)
 - Cobalt blue: hsl(234, 85%, 45%) */
-.light-red { background-color: hsl(0, 100%, 67%); }
-.orangey-yellow { background-color: hsl(39, 100%, 56%);}
-.green-teal { background-color: hsl(166, 100%, 37%);}
-.cobalt-blue { background-color: hsl(234, 85%, 45%);}
+
+:root {
+    --light-red: hsl(0, 100%, 67%);
+    --light-red-bg: color-mix(in hsl, var(--light-red) 20%, white);
+
+    --orangey-yellow: hsl(39, 100%, 56%);
+    --orangey-yellow-bg: color-mix(in hsl, hsl(0, 100%, 67%) 50%, white);
+    /* --orangey-yellow-bg: color-mix(in hsl, hsl(39, 100%, 56%) 20%, white); */
+
+    --green-teal: hsl(166, 100%, 37%);
+    --green-teal-bg: color-mix(in hsl, var(--green-teal) 20%, white);
+
+    --cobalt-blue: hsl(234, 85%, 45%);
+    --cobalt-blue-bg: color-mix(in hsl, var(--cobalt-blue) 20%, white);
+}
+
+.light-red { color: var(--light-red);}
+.light-red-bg { background-color: var(--light-red-bg);}
+.orangey-yellow { color: var(--orangey-yellow);}
+.green-teal { color: var(--green-teal);}
+.cobalt-blue { color: var(--cobalt-blue);}
 
 /* ## Gradients
 - Light slate blue (background): hsl(252, 100%, 67%)
@@ -88,7 +105,7 @@
 }
 
 .summary-list {
-    margin-left: 20px;
+
 }
 
 .summary-item {
