@@ -25,7 +25,18 @@ const ResultsSummary = () => {
           <div className="summary-wrapper">
             <p className="summary-title">Summary</p>
             <div className="summary-list">
-              <p className="summary-item light-red light-red-bg">
+              {ResultsData.map((result, i) => (
+                <>
+                  <p className="summary-item light-red light-red-bg">
+                    <div>
+                      <img src={result.icon}></img>
+                      <span>{result.category}</span>
+                    </div>
+                    <span>{result.score} / 100</span>
+                  </p>
+                </>
+              ))}
+              {/* <p className="summary-item light-red light-red-bg">
                 <span>Reaction</span>
                 <span>80 / 100</span>
               </p>
@@ -40,19 +51,12 @@ const ResultsSummary = () => {
               <p className="summary-item cobalt-blue cobalt-blue-bg">
                 <span>Visual</span>
                 <span>72 / 100</span>
-              </p>
+              </p> */}
               <button className="continue bg-gradient">Continue</button>
             </div>
           </div>
         </div>
       </div>
-      {ResultsData.map((result, i) => (
-        <>
-          <div>{result.category}</div>
-          <div>{result.score}</div>
-          <div>{result.icon}</div>
-        </>
-      ))}
     </>
   );
 };
