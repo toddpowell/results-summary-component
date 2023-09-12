@@ -8,24 +8,26 @@
 
 :root {
     --light-red: hsl(0, 100%, 67%);
-    --light-red-bg: color-mix(in hsl, var(--light-red) 20%, white);
+    --light-red-bg: hsl(0, 100%, 67%, .3);
 
     --orangey-yellow: hsl(39, 100%, 56%);
-    --orangey-yellow-bg: color-mix(in hsl, hsl(0, 100%, 67%) 50%, white);
-    /* --orangey-yellow-bg: color-mix(in hsl, hsl(39, 100%, 56%) 20%, white); */
+    --orangey-yellow-bg: hsl(39, 100%, 56%, .3);
 
     --green-teal: hsl(166, 100%, 37%);
-    --green-teal-bg: color-mix(in hsl, var(--green-teal) 20%, white);
+    --green-teal-bg: hsl(166, 100%, 37%, .3);
 
     --cobalt-blue: hsl(234, 85%, 45%);
-    --cobalt-blue-bg: color-mix(in hsl, var(--cobalt-blue) 20%, white);
+    --cobalt-blue-bg: hsl(234, 85%, 45%, .3);
 }
 
 .light-red { color: var(--light-red);}
 .light-red-bg { background-color: var(--light-red-bg);}
 .orangey-yellow { color: var(--orangey-yellow);}
+.orangey-yellow-bg { background-color: var(--orangey-yellow-bg); }
 .green-teal { color: var(--green-teal);}
+.green-teal-bg { background-color: var(--green-teal-bg); }
 .cobalt-blue { color: var(--cobalt-blue);}
+.cobalt-blue-bg { background-color: var(--cobalt-blue-bg); }
 
 /* ## Gradients
 - Light slate blue (background): hsl(252, 100%, 67%)
