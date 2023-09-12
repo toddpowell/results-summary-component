@@ -36,22 +36,6 @@ const ResultsSummary = () => {
                   </p>
                 </>
               ))}
-              {/* <p className="summary-item light-red light-red-bg">
-                <span>Reaction</span>
-                <span>80 / 100</span>
-              </p>
-              <p className="summary-item orangey-yellow orangey-yellow-bg">
-                <span>Memory</span>
-                <span>92 / 100</span>
-              </p>
-              <p className="summary-item green-teal green-teal-bg">
-                <span>Verbal</span>
-                <span>61 / 100</span>
-              </p>
-              <p className="summary-item cobalt-blue cobalt-blue-bg">
-                <span>Visual</span>
-                <span>72 / 100</span>
-              </p> */}
               <button className="continue xbg-gradient">Continue</button>
             </div>
           </div>
