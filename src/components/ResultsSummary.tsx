@@ -52,7 +52,7 @@ const ResultsSummary = () => {
                 <span>Visual</span>
                 <span>72 / 100</span>
               </p> */}
-              <button className="continue bg-gradient">Continue</button>
+              <button className="continue xbg-gradient">Continue</button>
             </div>
           </div>
         </div>

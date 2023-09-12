@@ -144,15 +144,17 @@
 
 .summary-item img {
     margin-right: 10px;
+    position: relative;
+    top: 4px;
 }
 
 /* .summary-item span:nth-child(2) {
     text-align: right;
 } */
 
-button {
+.continue {
     width: 87%;
-    background-color: #ddd;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border: none;
     color: white;
     padding: 10px 20px;
@@ -166,6 +168,10 @@ button {
     bottom: 0px;
   }
 
-button:hover {
-    background-color: #f1f1f1;
+/* .continue:hover {
+    background-color: grey;
+  } */
+
+  .continue:hover{
+    background-image: linear-gradient(to bottom, hsl(224, 30%, 27%), hsl(224, 30%, 27%));
   }
