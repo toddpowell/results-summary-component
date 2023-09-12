@@ -54,13 +54,17 @@
   box-sizing: border-box 
 }
 
-.results-summary-wrapper {
+.left-panel {
     display: flex;
     justify-content: center;
 }
 
-.result-wrapper, .summary-wrapper {
+.result-wrapper, .right-panel {
     width: 300px;
+}
+
+.summary-bottom {
+    border: 2px solid black;
 }
 
 .result-wrapper {
@@ -126,13 +130,10 @@
 
 
 
-.summary-wrapper {
+.right-panel {
     padding: 0 20px;
     padding-bottom: 20px;
-}
-
-.summary-list {
-
+    position: relative;
 }
 
 .summary-item {
@@ -146,17 +147,19 @@
 } */
 
 button {
-    width: 100%;
+    width: 87%;
     background-color: #ddd;
     border: none;
-    color: black;
+    color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
+    margin: 20px 0px;
     cursor: pointer;
     border-radius: 16px;
+    position: absolute;
+    bottom: 0px;
   }
 
 button:hover {

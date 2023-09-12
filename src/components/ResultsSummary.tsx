@@ -3,7 +3,7 @@ import "./ResultsSummary.css";
 const ResultsSummary = () => {
   return (
     <>
-      <div className="results-summary-wrapper">
+      <div className="left-panel">
         <div className="result-wrapper bg-gradient">
           <p className="result-title">Your Result</p>
           <div className="circle-wrapper">
@@ -20,27 +20,29 @@ const ResultsSummary = () => {
             </p>
           </div>
         </div>
-        <div className="summary-wrapper">
-          <p className="summary-title">Summary</p>
-          <div className="summary-list">
-            <p className="summary-item light-red light-red-bg">
-              <span>Reaction</span>
-              <span>80 / 100</span>
-            </p>
-            <p className="summary-item orangey-yellow orangey-yellow-bg">
-              <span>Memory</span>
-              <span>92 / 100</span>
-            </p>
-            <p className="summary-item green-teal green-teal-bg">
-              <span>Verbal</span>
-              <span>61 / 100</span>
-            </p>
-            <p className="summary-item cobalt-blue cobalt-blue-bg">
-              <span>Visual</span>
-              <span>72 / 100</span>
-            </p>
+        <div className="right-panel">
+          <div className="summary-wrapper">
+            <p className="summary-title">Summary</p>
+            <div className="summary-list">
+              <p className="summary-item light-red light-red-bg">
+                <span>Reaction</span>
+                <span>80 / 100</span>
+              </p>
+              <p className="summary-item orangey-yellow orangey-yellow-bg">
+                <span>Memory</span>
+                <span>92 / 100</span>
+              </p>
+              <p className="summary-item green-teal green-teal-bg">
+                <span>Verbal</span>
+                <span>61 / 100</span>
+              </p>
+              <p className="summary-item cobalt-blue cobalt-blue-bg">
+                <span>Visual</span>
+                <span>72 / 100</span>
+              </p>
+              <button className="continue bg-gradient">Continue</button>
+            </div>
           </div>
-          <button className="continue">Continue</button>
         </div>
       </div>
     </>
